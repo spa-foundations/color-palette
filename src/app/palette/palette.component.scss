@@ -1,5 +1,23 @@
+
 .palette {
-  height: calc(100% - 64px);
+  width: 560px;
+  height: 560px;
+  margin: 0 auto;
   display: grid;
-  grid-column-gap: 50px;
+  grid-gap: 0;
+  grid-template-columns: repeat(10, 70px);
+  grid-template-rows: 40px repeat(10, 70px) 40px;
+  grid-auto-flow: row;
+
+  .color {
+    border: 1px solid gray;
+  }
+}
+.wrapper-inner{
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  align-items: strech;
 }

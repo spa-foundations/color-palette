@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Color} from "../color";
+import {Color} from '../color';
+import {PaletteService} from '../palette.service';
+import {Palette} from '../palette';
 
 @Component({
   selector: 'app-palette',
@@ -8,22 +10,15 @@ import {Color} from "../color";
 })
 export class PaletteComponent implements OnInit {
   @Input() size;
-  palette: Color[] = [];
-  constructor() {
+  @Input() colorA;
+  @Input() colorB;
+  palette: Palette;
+  constructor(private paletteService: PaletteService) {
   }
 
   ngOnInit(): void {
-    this.initPalette();
-  }
-
-  /**
-   * Initializes the color palette
-   */
-  private initPalette(): void {
-    for (let i = 0; i < this.size; i++) {
-      this.palette.push({
-        color: 'black'
-      });
-    }
+    const colorA = {color: '#000000'};
+    const colorB = {color: '#000000'};
+    this.palette = this.paletteService.generate(this.size, colorA, colorB);
   }
 }
