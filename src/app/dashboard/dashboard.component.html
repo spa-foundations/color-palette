@@ -1,0 +1,32 @@
+<section class="section">
+  <div class="container">
+    <h1 class="mat-display-3 is-hidden-mobile">Color Palette Generator</h1>
+    <div class="dashboard">
+      <mat-drawer-container autosize>
+        <mat-drawer #drawer mode="side">
+          <div class="color-picker">
+            <app-gradient-selector
+              [colorA]="colorA"
+              [colorB]="colorB"
+              [size]="size"
+              (generate)="palette.generatePalette()"
+            ></app-gradient-selector>
+          </div>
+        </mat-drawer>
+
+        <div>
+          <button type="button" mat-flat-button	color="primary" (click)="drawer.toggle()" class="button-toggle">
+            <mat-icon aria-hidden="false">color_lens</mat-icon> Customize colors
+          </button>
+          <app-palette
+            [size]="size"
+            [colorA]="colorA"
+            [colorB]="colorB"
+            #palette
+          ></app-palette>
+        </div>
+
+      </mat-drawer-container>
+    </div>
+  </div>
+</section>
