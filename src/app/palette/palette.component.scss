@@ -1,7 +1,8 @@
 
 .palette {
-  width: 560px;
-  height: 560px;
+  $size: 560px;
+  width: $size;
+  height: $size;
   margin: 0 auto;
   display: grid;
   grid-gap: 0;
@@ -9,6 +10,13 @@
   grid-template-rows: 40px repeat(10, 70px) 40px;
   grid-auto-flow: row;
 
+  @media only screen and (max-width: 600px) {
+    $size: 300px;
+    width: $size;
+    height: $size;
+    grid-template-columns: repeat(10, 25px);
+    grid-template-rows: 40px repeat(10, 25px) 40px;
+  }
   .color {
     cursor: pointer;
     padding: 1px;
