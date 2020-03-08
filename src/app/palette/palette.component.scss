@@ -4,14 +4,11 @@
   margin: 0 auto;
   display: grid;
   grid-gap: 0;
-  grid-template-columns: repeat(10, 70px);
-  grid-template-rows: repeat(10, 70px);
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
   grid-auto-flow: row;
 
   @media only screen and (max-width: 600px) {
-    $size: 300px;
-    width: $size;
-    height: $size;
     grid-template-columns: repeat(10, 25px);
     grid-template-rows: repeat(10, 25px);
   }
