@@ -1,0 +1,27 @@
+<section class="section">
+  <div class="container">
+    <h1 class="mat-display-3 is-hidden-mobile">Color Palette Generator</h1>
+    <div class="columns">
+      <!--Color parameters-->
+      <div class="column is-one-fifth">
+        <div class="mat-elevation-z8 color-picker">
+          <app-gradient-selector
+            [colorA]="colorA"
+            [colorB]="colorB"
+            [size]="size"
+            (generate)="palette.generatePalette()"
+          ></app-gradient-selector>
+        </div>
+      </div>
+      <!--Palette-->
+      <div class="column is-two-thirds">
+        <app-palette
+          [size]="size"
+          [colorA]="colorA"
+          [colorB]="colorB"
+          #palette
+        ></app-palette>
+      </div>
+    </div>
+  </div>
+</section>

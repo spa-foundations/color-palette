@@ -1,0 +1,25 @@
+<h2 class="mat-h2">Choose 2 colors</h2>
+<!--Color 1-->
+<mat-form-field appearance="outline">
+  <mat-label>Color 1</mat-label>
+  <input
+    type="color"
+    matInput
+    placeholder="#020202, blue, pink"
+    [(ngModel)]="colorA.color">
+</mat-form-field>
+<!--Color 2-->
+<mat-form-field appearance="outline">
+  <mat-label>Color 2</mat-label>
+  <input
+    type="color"
+    matInput
+    placeholder="#020202, blue, pink"
+    [(ngModel)]="colorB.color">
+</mat-form-field>
+<!--Size-->
+<!--<div>
+  <label>Grid size: </label>
+  <mat-slider min="5" max="20" step="1" [(ngModel)]="size" ></mat-slider>
+</div>-->
+<button mat-raised-button color="primary" (click)="generate.emit()">Generate palette</button>
