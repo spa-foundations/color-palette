@@ -1,3 +1,9 @@
 <div class="palette">
-  <div *ngFor="let color of palette.colors" [style.background]="color.color" class="color"></div>
+  <div
+    *ngFor="let color of palette.colors"
+    [style.background]="color.color"
+    class="color"
+    ngxClipboard [cbContent]="color.color"
+    (click)="colorCopied(color)"
+  ><div class="color-inner"></div></div>
 </div>

@@ -23,6 +23,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PaletteComponent } from './palette/palette.component';
 import { GradientSelectorComponent } from './gradient-selector/gradient-selector.component';
+import {ClipboardModule} from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { GradientSelectorComponent } from './gradient-selector/gradient-selector
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ClipboardModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatSliderModule,

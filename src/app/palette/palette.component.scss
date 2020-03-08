@@ -9,6 +9,21 @@
   grid-template-rows: 40px repeat(10, 70px) 40px;
   grid-auto-flow: row;
 
+  .color {
+    cursor: pointer;
+    padding: 1px;
+    .color-inner {
+      border: 1px solid transparent;
+      height: 100%;
+      width: 100%;
+    }
+    &:hover {
+      .color-inner {
+        border: 1px solid white;
+      }
+    }
+  }
+
 }
 .wrapper-inner{
   display: grid;
