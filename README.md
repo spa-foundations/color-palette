@@ -1,5 +1,5 @@
-# SICPA Recruitment test - David Galvis
-This project is a 4 hour challenge requested by SICPA for the recruitment process. I used Google's Material Design Framework to quickly build an application with a visual language that synthesizes the classic principles of good design with innovation and possibility of technology and science.
+# Color Palette Generator - David Galvis
+This project is a 4 hour challenge requested by SICPA for the recruitment process. It's a basic color palette generator made with Angular.
 
 ## Run the webserver
 
