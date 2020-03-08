@@ -29,17 +29,9 @@ export class PaletteService {
       .scale([colorA.color, colorB.color])
       .mode('lch')
       .colors(size * size);
-    console.log(colors);
-
+    // generating palette
     colors.forEach(color => palette.colors.push({color}));
-    // creating color palette
-    /*for (let i = 0; i < size; i++) {
-      const colorHex = this.chromaService.chroma.darken(i / 10);
-      for (let j = 0; j < size; j++) {
-        console.log(colorA);
-        palette.colors.push(colorA);
-      }
-    }*/
+
     return palette;
   }
 }
