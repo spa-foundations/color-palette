@@ -15,7 +15,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {LayoutModule} from '@angular/cdk/layout';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -35,6 +35,7 @@ import { GradientSelectorComponent } from './gradient-selector/gradient-selector
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatSliderModule,
