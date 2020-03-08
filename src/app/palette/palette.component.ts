@@ -17,8 +17,8 @@ export class PaletteComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const colorA = {color: '#000000'};
-    const colorB = {color: '#000000'};
+    const colorA = {color: 'red'};
+    const colorB = {color: 'blue'};
     this.palette = this.paletteService.generate(this.size, colorA, colorB);
   }
 }
