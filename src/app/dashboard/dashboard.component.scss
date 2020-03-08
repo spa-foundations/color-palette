@@ -1,7 +1,22 @@
 h1 {
   text-align: center;
 }
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button-toggle {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
 .color-picker {
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
+}
+.palette-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

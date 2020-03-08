@@ -17,6 +17,8 @@ export class DashboardComponent implements OnInit {
   colorA: Color = {color: '#0086b3'};
   colorB: Color = {color: '#b30000'};
   size = 10;
+  showFiller = false;
+
   constructor() {
   }
 
