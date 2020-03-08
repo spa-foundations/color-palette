@@ -14,4 +14,11 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  /**
+   * Fired when the user clicks on "generate palette"
+   */
+  onGenerate() {
+    window.alert('You will be notified when the product goes on sale');
+  }
 }

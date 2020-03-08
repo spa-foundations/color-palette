@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Color} from "../color";
+import { Output, EventEmitter } from '@angular/core';
+import {Color} from '../color';
 
 @Component({
   selector: 'app-gradient-selector',
@@ -9,6 +10,8 @@ import {Color} from "../color";
 export class GradientSelectorComponent implements OnInit {
   @Input() colorA: Color;
   @Input() colorB: Color;
+
+  @Output() generate = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
