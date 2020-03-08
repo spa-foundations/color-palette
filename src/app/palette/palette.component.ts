@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Color} from '../color';
 import {PaletteService} from '../palette.service';
 import {Palette} from '../palette';
 

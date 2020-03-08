@@ -1,12 +1,17 @@
 <section class="section">
-  <div class="columns">
-    <!--Color parameters-->
-    <div class="column is-one-fifth">
-      <app-gradient-selector></app-gradient-selector>
-    </div>
-    <!--Palette-->
-    <div class="column is-two-thirds">
-      <app-palette [size]="10"></app-palette>
+  <div class="container">
+    <div class="columns">
+      <!--Color parameters-->
+      <div class="column is-one-fifth">
+        <div class="mat-elevation-z8 color-picker">
+          <app-gradient-selector></app-gradient-selector>
+        </div>
+      </div>
+      <!--Palette-->
+      <div class="column is-two-thirds">
+        <app-palette [size]="10"></app-palette>
+      </div>
     </div>
   </div>
+
 </section>
