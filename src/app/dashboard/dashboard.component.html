@@ -8,6 +8,7 @@
           <app-gradient-selector
             [colorA]="colorA"
             [colorB]="colorB"
+            [size]="size"
             (generate)="palette.generatePalette()"
           ></app-gradient-selector>
         </div>
@@ -15,7 +16,7 @@
       <!--Palette-->
       <div class="column is-two-thirds">
         <app-palette
-          [size]="10"
+          [size]="size"
           [colorA]="colorA"
           [colorB]="colorB"
           #palette

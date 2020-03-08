@@ -10,6 +10,7 @@ import {Color} from '../color';
 export class GradientSelectorComponent implements OnInit {
   @Input() colorA: Color;
   @Input() colorB: Color;
+  @Input() size: number;
 
   @Output() generate = new EventEmitter();
   constructor() { }

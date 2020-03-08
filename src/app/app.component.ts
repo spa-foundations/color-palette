@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import {Observable} from "rxjs";
-import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
-import {map, shareReplay} from "rxjs/operators";
 
 @Component({
   selector: 'app-root',
@@ -10,13 +7,5 @@ import {map, shareReplay} from "rxjs/operators";
 })
 export class AppComponent {
   title = 'SICPA Recruitment test';
-
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
 }
 
