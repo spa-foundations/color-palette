@@ -2,20 +2,13 @@
 .palette {
   $size: 560px;
   margin: 0 auto;
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: repeat(10, 60px);
-  grid-template-rows: repeat(10, 60px);
-  grid-auto-flow: row;
 
-  @media only screen and (max-width: 600px) {
-    grid-template-columns: repeat(10, 25px);
-    grid-template-rows: repeat(10, 25px);
-  }
   .color {
     cursor: pointer;
+    height: 40px;
+    width: 40px;
     padding: 3px;
-    .color-inner {
+     .color-inner {
       border: 1px solid transparent;
       height: 100%;
       width: 100%;
@@ -26,12 +19,4 @@
       }
     }
   }
-
-}
-.wrapper-inner{
-  display: grid;
-  grid-gap: 0;
-  grid-template-columns: repeat(10, auto);
-  grid-template-rows: auto;
-  grid-auto-flow: row;
 }

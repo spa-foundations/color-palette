@@ -6,8 +6,6 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 
 /**
  * Palette component.
- * @author David Galvis <dav.galvis@gmail.com>
- * @copyright Copyright (c) 2020
  */
 
 @Component({

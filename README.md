@@ -1,5 +1,5 @@
-# Color Palette Generator - David Galvis
-This project is a 4 hour challenge requested by SICPA for the recruitment process. It's a basic color palette generator made with Angular.
+# Color Palette Generator - SICPA
+This project is used by SICPA for the recruitment process. It's a basic color palette generator made with Angular.
 
 ## Run the webserver
 

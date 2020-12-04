@@ -28,7 +28,7 @@ export class PaletteService {
     const colors = chroma
       .scale([colorA.color, colorB.color])
       .mode('lch')
-      .colors(size * size);
+      .colors(size);
     // generating palette
     colors.forEach(color => palette.colors.push({color}));
 
